@@ -2,23 +2,39 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/global_styles.css">
 		<title>Книга кулинарных рецептов</title>
 	</head>
 	<body>
+	<div id="wrap">
 		<header>
-			<h1>На этом сайте вы найдёте различные рецепты кулинарных блюд</h1>
+
+			<div id="HeaderLine">
+				<div id="HeaderLineIco"><img src="/pictures/cook_logo.gif" alt="logo" title="cook" width="100px"></div>
+				<div id="HeaderLineText">
+					<h2>Сайт кулинарных рецептов</h2>
+				</div>
+			</div>
 			<nav>
-				<a href = "/index.html">Главная</a> |
-				<a href = "/entree.html">Первые блюда</a> |
-				<a href = "#">Вторые блюда</a> |
-				<a href = "#">Десерты</a> |
+				<ul id="mainmenu">
+					<!-- Специально убрал закрывающий тег, чтобы избавиться от пробела между пунктами меню-->
+					<li><a href = "/index.html">Главная</a> 
+					<li><a href = "/entree.html">Первые блюда</a>
+					<li><a href = "#">Вторые блюда</a>
+					<li><a href = "#">Десерты</a>
+					<li id="ThemeButton">
+						<a>Тема</a>
+						<ul id="SecondMenu">
+							<li><a id="warmTheme">Тёплая</a>
+							<li><a id="coolTheme">Холодная</a>
+						</ul>
+					</li>
+				</ul>
 			</nav>
-		</header>	
+
+		</header>
 
 		<main>
-			<div>
-				<img src="/pictures/cook_logo.jpg" alt="logo" title="cook">
-			</div>
 			<p>
 				<q>Готовить может каждый!</q>
 			</p>
@@ -28,7 +44,6 @@
    				<a href="/video/creativity.mp4">Скачайте видео</a>.
 			</video>
 		</main>
-
 		<footer>
 			<hr>
 			<address>
@@ -36,5 +51,7 @@
 				<a href="https://www.russianfood.com">www.russianfood.com</a>
 			</address>
 		</footer>
+	</div>
+	<script src="/index.js"></script>
 	</body>
 </html>

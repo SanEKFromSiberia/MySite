@@ -2,28 +2,49 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/global_styles.css">
 		<title>Первые блюда</title>
 	</head>
 	<body>
+		<div id="wrap">
 		<header>
+
+			<div id="HeaderLine">
+				<div id="HeaderLineIco"><img src="/pictures/cook_logo.gif" alt="logo" title="cook" width="100px"></div>
+				<div id="HeaderLineText">
+					<h2>Сайт кулинарных рецептов</h2>
+				</div>
+			</div>
 			<nav>
-				<a href = "/index.html">Главная</a> |
-				<a href = "/entree.html">Первые блюда</a> |
-				<a href = "#">Вторые блюда</a> |
-				<a href = "#">Десерты</a> |
+				<ul id="mainmenu">
+					<!-- Специально убрал закрывающий тег, чтобы избавиться от пробела между пунктами меню-->
+					<li><a href = "/index.html">Главная</a> 
+					<li><a href = "/entree.html">Первые блюда</a>
+					<li><a href = "#">Вторые блюда</a>
+					<li><a href = "#">Десерты</a>
+					<li id="ThemeButton">
+						<a>Тема</a>
+						<ul id="SecondMenu">
+							<li><a id="warmTheme">Тёплая</a>
+							<li><a id="coolTheme">Холодная</a>
+						</ul>
+					</li>
+				</ul>
 			</nav>
-		</header>	
+
+		</header>
 
 		<main>
 			<h5>Рецепт с фото пошаговый</h5>
 			<h1>Борщ с говядиной</h1>
-			<div>
-				<img src="\pictures\sm_63397.jpg">
-				Вкусный красный борщ с говядиной приготовить очень легко.</div>
+				<div>
+					<img src="\pictures\sm_63397.jpg">
+					<br>
+					Вкусный красный борщ с говядиной приготовить очень легко.
+				</div>
 				<h2>Продукты</h2>				
 				<p>
-					<ul type="circle">
-						<li>элемент маркированного списка</li>
+					<ul class="ProductList" type="circle">
 						<li>Говядина - 500 г.</li>
 						<li>Свёкла - 1 шт.</li>
 						<li>Картофель - 2 шт.</li>
@@ -41,7 +62,7 @@
 					</ul>
 				</p>
 				<p>
-					<table>
+					<table class="PhotoRecipe">
 						<caption><h2>Пошаговый фото рецепт</h2></caption>
 						<tr>
     						<td><img src="\pictures\sm_b1.jpg"></td>
@@ -107,7 +128,7 @@
 				</p>
 			</div>
 		</main>
-
+		</div>
 		<footer>
 			<hr>
 			<address>
@@ -115,5 +136,6 @@
 				<a href="https://www.russianfood.com">www.russianfood.com</a>
 			</address>
 		</footer>
+		<script src="/index.js"></script>
 	</body>
 </html>

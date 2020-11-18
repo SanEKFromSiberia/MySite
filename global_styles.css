@@ -1,0 +1,99 @@
+:root{
+	--ThemeMainBackground: #FFFFFF;
+	--ThemeHeaderLineBackground: #FFFFFF;
+	--ThemeHeaderLineText: #000000;
+	--ThemeMenu: #BBBBBB;
+	--ThemeMouseoverMenu: #949494;
+	--ThemeTextMenu: #000000;
+}
+.classWarmTheme {
+	--ThemeMainBackground: #fffacc;
+	--ThemeHeaderLineBackground: #FFDC95;
+	--ThemeHeaderLineText: #FF5900;
+	--ThemeMenu: #FFF7B2;
+	--ThemeMouseoverMenu: #FFC94A;
+	--ThemeTextMenu: #FF5500;
+}
+.classCoolTheme {
+	--ThemeMainBackground: #C4D5FF;
+	--ThemeHeaderLineBackground: #6691FF;
+	--ThemeHeaderLineText: #0048FF;
+	--ThemeMenu: #82A5FF;
+	--ThemeMouseoverMenu: #6591FF;
+	--ThemeTextMenu: #006AFF;
+}
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+	background: var(--ThemeMainBackground);
+}
+#HeaderLine {
+	background: var(--ThemeHeaderLineBackground);	
+}
+#HeaderLineText {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	color: var(--ThemeHeaderLineText);
+}
+#HeaderLineIco {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+#mainmenu {
+	padding: 0px;
+ 	background: var(--ThemeMenu);
+  	margin: 0px;
+  	display: block;
+ }
+#mainmenu li {
+	background: var(--ThemeMenu);
+	display: inline-block;
+	list-style: none;
+	width: 140px;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Arial';
+	text-align: center;
+	border: 1px solid var(--ThemeMouseoverMenu);
+}
+#mainmenu li a {
+	display: block;
+	padding: 10px;
+	margin: 0px;
+	text-decoration: none;
+	color: var(--ThemeTextMenu);
+}
+#mainmenu li a:hover {
+	background: var(--ThemeMouseoverMenu);
+	transition: .2s linear;
+	cursor: pointer;
+}
+#mainmenu li a:visited {
+	color: var(--ThemeTextMenu);
+}
+li#ThemeButton {
+	float: right;
+	width: 80px;
+}
+#SecondMenu li {
+	float: right;
+	display: none;
+	
+}
+li#ThemeButton > a:hover {
+	cursor: default;
+}
+#ThemeButton:hover #SecondMenu li{
+	display: block;
+}
+.ProductList li {
+	font-style: italic;
+}
+.PhotoRecipe {
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
