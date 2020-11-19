@@ -18,10 +18,10 @@
 			<nav>
 				<ul id="mainmenu">
 					<!-- Специально убрал закрывающий тег, чтобы избавиться от пробела между пунктами меню-->
-					<li><a href = "/index.html">Главная</a> 
-					<li><a href = "/entree.html">Первые блюда</a>
-					<li><a href = "#">Вторые блюда</a>
-					<li><a href = "#">Десерты</a>
+					<li><a class="firstPageLink">Главная</a> 
+					<li><a class="entreePageLink">Первые блюда</a>
+					<li><a >Вторые блюда</a>
+					<li><a >Десерты</a>
 					<li id="ThemeButton">
 						<a>Тема</a>
 						<ul id="SecondMenu">
@@ -35,14 +35,114 @@
 		</header>
 
 		<main>
+			<!--<div class="activePage">Я активен</div>
+			<div class="activePage">Я тоже</div>-->
+			<div class="firstPage activePage">
 			<p>
 				<q>Готовить может каждый!</q>
+				<p class="comment" >Этот сайт является учебным поэтому не всё на нём реализовано как надо.
+					Теперь сайт стал одностраничным и выбранная тема не слетает при переходе по пунктам меню.</p>
 			</p>
 			<video width="400" height="300" controls="controls" poster="/video/creativity.png">
 				<source src="/video/creativity.png" type='video/mp4'>
 				Тег video не поддерживается вашим браузером. 
    				<a href="/video/creativity.mp4">Скачайте видео</a>.
 			</video>
+			</div>
+			
+			<div class="entreePage nonActivePage" style="display: none;">
+				<h5>Рецепт с фото пошаговый</h5>
+				<h1 class="headerOfReceipe" >Борщ с говядиной</h1>
+					<div>
+						<img class="picOfReceipe" src="\pictures\sm_63397.jpg">
+						<br>
+						<span class="commentOfReceipe">Вкусный красный борщ с говядиной приготовить очень легко.</span>
+					</div>
+					<h2>Продукты</h2>				
+					<p>
+						<ul class="ProductList" type="circle">
+							<li>Говядина - 500 г.</li>
+							<li>Свёкла - 1 шт.</li>
+							<li>Картофель - 2 шт.</li>
+							<li>Капуста - 200 г.</li>
+							<li>Морковь - 1 шт.</li>
+							<li>Лук - 1 шт.</li>
+							<li>Зелень (укроп или петрушка) - 2-3 ч. ложки</li>
+							<li>Томатная паста - 1 ст. ложка</li>
+							<li>Масло растительное - 2 ст. ложки</li>
+							<li>Уксус - 1 ч. ложка</li>
+							<li>Сметана - 2 ст. ложки</li>
+							<li>Соль - 2 ч. ложки</li>
+							<li>Перец чёрный горошком - 2-3 шт.</li>
+							<li>Лавровый лист - 1 шт.</li>
+						</ul>
+					</p>
+					<p>
+						<table class="PhotoRecipe">
+							<caption><h2>Пошаговый фото рецепт</h2></caption>
+							<tr>
+	    						<td><img src="\pictures\sm_b1.jpg"></td>
+	    						<td>Подготовить продукты для борща с говядиной.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b2.jpg"></td>
+	    						<td>Говядину промыть, нарезать крупными кусками.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b3.jpg"></td>
+	    						<td>Залить 1,5 л воды и варить 90 минут на среднем огне, снимая образующуюся пену.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b4.jpg"></td>
+	    						<td>В конце варки посолить.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b5.jpg"></td>
+	    						<td>Свёклу очистить, вымыть, нарезать соломкой.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b6.jpg"></td>
+	    						<td>Морковь очистить, вымыть, натереть на крупной терке.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b7.jpg"></td>
+	    						<td>Лук очистить, вымыть, мелко нарезать.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b8.jpg"></td>
+	    						<td>Капусту вымыть, нашинковать.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b9.jpg"></td>
+	    						<td>Картофель очистить, вымыть, нарезать кубиками.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b10.jpg"></td>
+	    						<td>На сковороде разогреть растительное масло. На среднем огне свёклу, морковь и лук, помешивая, тушить на сковороде с растительным маслом 5–7 минут.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b11.jpg"></td>
+	    						<td>В конце добавить уксус и томатную пасту. Перемешать.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b12.jpg"></td>
+	    						<td>В кипящий бульон положить картофель и капусту, варить 10 минут.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b13.jpg"></td>
+	    						<td>Затем добавить тушеные овощи, лавровый лист и, при желании, перец. Варить борщ с говядиной еще 5–7 минут.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b14.jpg"></td>
+	    						<td>Зелень нарезать.</td>    						
+							</tr>
+							<tr>
+	    						<td><img src="\pictures\sm_b15.jpg"></td>
+	    						<td>Готовый борщ с говядиной разлить по тарелкам, заправить сметаной и посыпать зеленью.</td>    						
+							</tr>
+						</table>
+					</p>
+			</div>
 		</main>
 		<footer>
 			<hr>
@@ -52,6 +152,7 @@
 			</address>
 		</footer>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="/index.js"></script>
 	</body>
 </html>
