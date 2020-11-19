@@ -97,3 +97,8 @@ li#ThemeButton > a:hover {
 	text-align: center;
 	vertical-align: middle;
 }
+.comment {
+	font-family: courier;
+	font-size: 20px;
+
+}
