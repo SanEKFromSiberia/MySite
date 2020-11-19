@@ -1,4 +1,6 @@
 
+function main() {
+
 function SetThemeClass(themeName) {
 	let tegForTheme = document.querySelector("body");
 	switch(themeName) {
@@ -15,3 +17,7 @@ function SetThemeClass(themeName) {
 }
 warmTheme.onclick = function() {SetThemeClass('warm');}
 coolTheme.onclick = function() {SetThemeClass('cool');}
+}
+
+
+main();
